@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        #input,
+        #list {
+            height: 100px;
+            max-width: 1000px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 20px;
+        }
+        
+        .list,
+        .list-item {
+            margin: 5px;
+            text-align: center;
+            width: 700px;
+            height: 40px;
+        }
+        
+        #list {
+            margin-top: 20px;
+            text-align: center;
+            border: none;
+        }
+        
+        .list-item {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        
+        .task {
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <div class="header-task">
+        <div class="task">Add your task here</div>
+        <div id="input">
+            <input type="text" style="width: 700px; margin: 30px;" id="textEnter" />
+            <button type="button" onclick="enterTask(id)" id="submit" class="btn btn-primary">Enter task</button>
+        </div>
+        <div class="task">work already done are: </div>
+        <div id="list">
+        </div>
+    </div>
+
+</body>
+
+</html>
